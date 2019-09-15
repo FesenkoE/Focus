@@ -9,77 +9,165 @@
 // ============================
 
 body
-	height: 100vh
+  height: 100vh
 
 .container
 	width: 100%
 	max-width: nth($mediaBp, 1)
 	margin-left: auto
-	margin-right: auto
-	padding-left: 15px
-	padding-right: 15px
+  	margin-right: auto
+  	padding-left: 15px
+  	padding-right: 15px
 
 .header
-	display: flex
-	height: 27vh
+  	display: flex
+  	height: 27vh
 
 .logo-img
-	width: 50%
-	background-image: url("../img/focus-logo-img.png")
-	background-size: cover
-	background-repeat: no-repeat
+  	width: 50%
+  	background-image: url("../img/focus-logo-img.png")
+  	background-size: cover
+  	background-repeat: no-repeat
 
 .logo-title
-	background-color:  #F1EBE8
-	display: flex
-	align-items: center
-	width: 50%
-	justify-content: center
+  	background-color: #F1EBE8
+  	display: flex
+  	align-items: center
+  	width: 50%
+  	justify-content: center
 
 .main
-	display: flex
-	height: 34vh
+  	display: flex
+  	height: 34vh
 
 .schedule
-	background-color:  #F1EBE8
-	width: 50%
-	padding: 80px 100px
+  	background-color: #F1EBE8
+  	width: 50%
+  	padding: 80px 100px
 
 .location
-	width: 50%
-	display: flex
+  	width: 50%
+  	display: flex
 
 .location__address
-	width: 50%
+  	width: 50%
 
 .location__invitation
-	width: 50%
-	background-color: #B9876A
+  	width: 50%
+  	background-color: #B9876A
 
 .registration
-	display: flex
-	height: 34vh
+  	display: flex
+  	height: 34vh
 
 .registration__form
-	width: 50%
-	background-color: #3F3736
+  	width: 50%
+  	background-color: #3F3736
 
 .registration__condition
-	display: flex
-	width: 50%
+  	display: flex
+  	width: 50%
 
 .registration__condition__text
-	width: 50%
-	background-color: #F1EBE8
+  	width: 50%
+  	background-color: #F1EBE8
 
 .registration__condition__title
-	width: 50%
+  	width: 50%
 
 .footer
-	height: 5vh
-	background-color: #C08C6E
+  	height: 5vh
+  	background-color: #C08C6E
+
+.schedule__text
+  	font-family: "HeeboMedium", "Arial", "sans-serif"
+  	font-size: 26px
+  	text-align: right
+
+.schedule__text_bold
+  	font-family: "HeeboBold", "Arial", "sans-serif"
+  	font-size: 30px
+
+.schedule
+  	direction: rtl
+
+.schedule__text
+  	margin-bottom: 10px
+
+.location__address
+	padding: 80px 100px 0 100px
+
+.location__address__date
+	font-family: "HeeboBlack", "Arial", "sans-serif"
+	font-size: 58px
+	line-height: 54px
+	margin-bottom: 30px
+	text-align: center
+
+.location__address__street
+	font-family: "HeeboMedium", "Arial", "sans-serif"
+	font-size: 32px
+	text-align: center
+
+.location__invitation
+	padding: 80px 0 0 0
+	text-align: center
+	direction: rtl
 
 
+.location__invitation__title
+	font-family: "HeeboBlack", "Arial", "sans-serif"
+	font-size: 58px
+	line-height: 54px
+	color: #F1EBE8
+
+.location__invitation__subtitle
+	font-size: 42px
+	font-family: "HeeboRegular", "Arial", "sans-serif"
+	color: #F1EBE8
+	margin-bottom: 23px
+
+.location__invitation__name
+	font-size: 30px
+	font-family: "HeeboRegular", "Arial", "sans-serif"
+	color: #F1EBE8
+
+.location__invitation__text
+	font-size: 22px
+	font-family: "HeeboRegular", "Arial", "sans-serif"
+	color: #F1EBE8
+
+.registration__condition__text
+	direction: rtl
+	padding: 80px 50px 0 25px
+
+.offers-list
+	list-style: disc
+	font-family: "HeeboRegular", "Arial", "sans-serif"
+	font-size: 28px
+	direction: rtl
+
+.offers-item_bold
+	font-family: "HeeboBold", "Arial", "sans-serif"
+
+.registration__condition__title__text
+	direction: rtl
+	padding: 80px 50px 0 0
+	font-family: "HeeboBlack", "Arial", "sans-serif"
+	font-size: 52px
+	line-height: 54px
+
+.footer
+	display: flex
+	text-align: center
+	align-items: center
+
+.footer__text
+	display: block
+	width: 100%
+	direction: rtl
+	color: #F1EBE8
+	font-size: 1.6em
 
 
 
@@ -87,9 +175,9 @@ body
 // MEDIA
 // ============================
 @for $i from 1 to length($mediaBp)
-	@media (max-width: nth($mediaBp, $i))
-		.container
-			max-width: nth($mediaBp, $i + 1)
+  @media (max-width: nth($mediaBp, $i))
+    .container
+      max-width: nth($mediaBp, $i + 1)
 
 // @media (max-width: nth($mediaBp, 1))
 //
