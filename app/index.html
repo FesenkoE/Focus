@@ -33,31 +33,74 @@
             <p class="location__invitation__title">אושר ועושר</p>
             <p class="location__invitation__subtitle">לבני הגיל השלישי</p>
             <p class="location__invitation__name">גמלאי רפאל,</p>
-            <p class="location__invitation__text">חברת פוקוס מתכבדת להזמינך עם בן/בת זוגך לערב שכולו אושר, עושר ומה שביניהם</p>
+            <p class="location__invitation__text">חברת פוקוס מתכבדת להזמינך עם בן/בת זוגך לערב שכולו אושר, עושר ומה
+                שביניהם</p>
             <p></p>
         </div>
     </div>
 </section>
 <section class="registration">
     <div class="registration__form">
-
+        <div class="registration__form__title">
+            הרשמה לכנס
+        </div>
+        <form action="" method="post">
+            <div class="registration__form__row">
+                <div class="registration__form__left">
+                    <label for="first-name" class="registration__form__label">שם פרטי:</label>
+                    <input type="text" id="first-name" class="registration__form__input" required>
+                </div>
+                <div class="registration__form__right">
+                    <label for="last-name" class="registration__form__label">שם משפחה:</label>
+                    <input type="text" id="last-name" class="registration__form__input" required>
+                </div>
+            </div>
+            <div class="registration__form__row">
+                <div class="registration__form__left">
+                    <label for="phone" class="registration__form__label">טלפון / נייד:</label>
+                    <input type="text" class="registration__form__input" id="phone" required>
+                </div>
+                <div class="registration__form__right">
+                    <label for="email" class="registration__form__label">דוא״ל:</label>
+                    <input type="email" id="email" class="registration__form__input">
+                </div>
+            </div>
+            <div class="registration__form__row bottom-row">
+                <div class="registration__form__left d-flex">
+                    <label for="city" class="registration__form__label__city">עיר מגורים:</label>
+                    <input type="text" id="city" class="registration__form__input__city">
+                </div>
+                <div class="registration__form__right  d-flex">
+                    <div class="registration__form__count">כמות משתתפים:</div>
+                    <div class="radio-btn">
+                        <input type="radio" id="1" name="count" value="1">
+                        <label for="1" class="radio-btn__btn">1</label>
+                        <input type="radio" id="2" name="count" value="2">
+                        <label for="2" class="radio-btn__btn">2</label>
+                    </div>
+                </div>
+            </div>
+        </form>
     </div>
     <div class="registration__condition">
         <div class="registration__condition__text">
             <ul class="offers-list">
                 <li class="offers-item"><span class="offers-item_bold">פגישה אישית עם מתכנן פיננסי</span></li>
                 <li class="offers-item"><span class="offers-item_bold">"מדריך המס הפרקטי לפורש"</span></li>
-                <li class="offers-item"><span class="offers-item_bold">יעוץ פרישה</span> - הטבה מיוחדת בשווי מאות שקלים לעובדים הפעילים הפורשים השנה</li>
+                <li class="offers-item"><span class="offers-item_bold">יעוץ פרישה</span> - הטבה מיוחדת בשווי מאות שקלים
+                    לעובדים הפעילים הפורשים השנה
+                </li>
             </ul>
         </div>
         <div class="registration__condition__title">
             <p class="registration__condition__title__text">נרשמים מראש<br>
-            ללא עלות ומקבלים במתנה:</p>
+                ללא עלות ומקבלים במתנה:</p>
         </div>
     </div>
 </section>
 <footer class="footer">
-<p class="footer__text">ט.ל.ח | פוקוס סוכנות לביטוח פנסיוני (2012) בע״מ | ההשתתפות מותנית ברישום מראש | ההרשמה ללא עלות | מספר המקומות מוגבל | למידע נוסף ניתן לפנות לתומר ניקסון: 052-3994949 | tomern@focus-inv.co.il</p>
+    <p class="footer__text">ט.ל.ח | פוקוס סוכנות לביטוח פנסיוני (2012) בע״מ | ההשתתפות מותנית ברישום מראש | ההרשמה ללא
+        עלות | מספר המקומות מוגבל | למידע נוסף ניתן לפנות לתומר ניקסון: 052-3994949 | tomern@focus-inv.co.il</p>
 </footer>
 </body>
 </html>
