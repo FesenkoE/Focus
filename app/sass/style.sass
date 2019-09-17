@@ -264,19 +264,109 @@ input[type="radio"]:checked+label
 // ============================
 // MEDIA
 // ============================
-@for $i from 1 to length($mediaBp)
-  @media (max-width: nth($mediaBp, $i))
-    .container
-      max-width: nth($mediaBp, $i + 1)
+/* (1920x1080) Full HD Display */
+@media  screen and (max-width: 1919px)
+	.location__address
+		padding: 80px 70px 0 70px
 
-// @media (max-width: nth($mediaBp, 1))
-//
-//
-//@media (max-width: nth($mediaBp, 2))
-//
-//
-//@media (max-width: nth($mediaBp, 3))
-//
-//
-//@media (max-width: nth($mediaBp, 4))
-//
+	.location__invitation__text
+		font-size: 1.3em
+
+	.registration__condition__title__text
+		font-size: 2.8em
+
+	.footer__text
+		font-size: 1.4em
+
+	.registration__form__count
+		font-size: 1.2em
+
+	.registration__form__label
+		font-size: 1.2em
+
+	.registration__form__label__city
+		font-size: 1.2em
+
+/* (1680x1050) WSXGA+ Display */
+@media  screen and (max-width: 1680px)
+	.logo-title
+		img
+			width: 45%
+
+	.schedule
+		padding: 70px 70px
+
+	.schedule__text
+		font-size: 1.28em
+
+	.schedule__text_bold
+		font-size: 1.5em
+
+	.location__address
+		padding: 70px 70px
+
+	.location__address__date
+		font-size: 2.9em
+		margin-bottom: 25px
+
+	.location__address__street
+		font-size: 1.5em
+
+	.location__invitation
+		padding: 70px 10px 0 10px
+
+	.location__invitation__title
+		font-size: 2.9em
+		line-height: 48px
+
+	.location__invitation__subtitle
+		font-size: 2.0em
+		line-height: 44px
+
+	.location__invitation__name
+		font-size: 1.7em
+
+	.location__invitation__text
+		font-size: 1.2em
+
+	.registration__form
+		padding: 20px 70px 0 70px
+
+	.registration__form__count
+		font-size: 1.1em
+
+	.registration__form__label
+		font-size: 1.1em
+
+	.registration__form__label__city
+		font-size: 1.1em
+
+	.registration__form__title
+		margin-bottom: 0
+
+	.registration__condition__text
+		padding: 70px 40px 0 20px
+
+	.offers-list
+		font-size: 1.4em
+
+	.registration__condition__title__text
+		padding: 70px 10px 0 0
+
+	.registration__condition__title__text
+		font-size: 2.7em
+
+	.footer__text
+		font-size: 1.2em
+
+/* (1440x900) WXGA+ Display */
+//@media  screen and (max-width: 1440px)
+
+/* (1280x1024) SXGA Display */
+//@media  screen and (max-width: 1280px)
+
+
+
+
+
+

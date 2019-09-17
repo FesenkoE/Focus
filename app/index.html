@@ -41,10 +41,21 @@
 </section>
 <section class="registration">
     <div class="registration__form">
-        <div class="registration__form__title">
-            הרשמה לכנס
-        </div>
         <form action="" method="post">
+            <div class="registration__form__row">
+                <div class="registration__form__title">
+                    הרשמה לכנס
+                </div>
+                <div class="registration__form__right  d-flex">
+                    <div class="registration__form__count">כמות משתתפים:</div>
+                    <div class="radio-btn">
+                        <input type="radio" id="1" name="count" value="1" checked>
+                        <label for="1" class="radio-btn__btn">1</label>
+                        <input type="radio" id="2" name="count" value="2">
+                        <label for="2" class="radio-btn__btn">2</label>
+                    </div>
+                </div>
+            </div>
             <div class="registration__form__row">
                 <div class="registration__form__left">
                     <label for="first-name" class="registration__form__label">שם פרטי:</label>
@@ -70,14 +81,8 @@
                     <label for="city" class="registration__form__label__city">עיר מגורים:</label>
                     <input type="text" id="city" class="registration__form__input__city">
                 </div>
-                <div class="registration__form__right  d-flex">
-                    <div class="registration__form__count">כמות משתתפים:</div>
-                    <div class="radio-btn">
-                        <input type="radio" id="1" name="count" value="1">
-                        <label for="1" class="radio-btn__btn">1</label>
-                        <input type="radio" id="2" name="count" value="2">
-                        <label for="2" class="radio-btn__btn">2</label>
-                    </div>
+                <div class="registration__form__right">
+                    <input type="submit" class="registration__form__input btn__submit" value="שלח">
                 </div>
             </div>
         </form>
