@@ -404,7 +404,6 @@ input[type="radio"]:checked+label
 @media  screen and (max-width: 1280px)
 	.header
 		min-height: 650px
-		//flex-wrap: wrap
 		flex-direction: column-reverse
 
 	.logo-title
@@ -417,11 +416,222 @@ input[type="radio"]:checked+label
 	.logo-title
 		width: 100%
 
-	body
-		min-height: 100%
+	.main
+		min-height: 650px
+		flex-direction: column-reverse
+
+	.location
+		width: 100%
+		height: 325px
+
+	.schedule
+		width: 100%
+		height: 325px
+
+	.registration
+		min-height: 650px
+		flex-direction: column
+
+	.registration__condition
+		width: 100%
+		height: 325px
+
+	.registration__form
+		width: 100%
+		height: 325px
 
 /* (1024x768) iPad 1 & 2, XGA */
 //@media only screen and (min-device-width: 768px) and (max-device-width: 1024px)
+
+/* (768x1024) iPad 1 & 2, Portrait */
+//@media only screen and (min-device-width: 768px) and (max-device-width: 1024px) and (orientation: portrait)
+
+/* (640x960) iPhone 4 & 4S */
+//@media only screen and (min-device-width: 640px) and (max-device-width: 960px)
+
+/* (480x800) Android */
+@media only screen and (min-device-width: 480px) and (max-device-width: 640px)
+	.logo-title
+		height: 220px
+
+	.header
+		min-height: 440px
+
+	.logo-img
+		height: 220px
+
+	.location
+		flex-direction: column-reverse
+		min-height: 440px
+
+	.location__address
+		width: 100%
+		height: 220px
+
+	.location__invitation
+		width: 100%
+		height: 220px
+
+	.main
+		min-height: 660px
+
+	.location__invitation
+		padding: 10px 10px 0 10px
+
+	.location__address
+		padding: 10px
+
+	.schedule
+		height: 220px
+		padding: 10px
+
+	.registration
+		flex-direction: column-reverse
+		min-height: 1010px
+
+	.registration__condition
+		flex-direction: column-reverse
+		min-height: 440px
+
+	.registration__condition__title
+		width: 100%
+		height: 220px
+
+	.registration__form
+		height: 570px
+		padding: 20px 80px
+
+	.registration__condition__text
+		width: 100%
+		height: 220px
+		padding: 50px 40px 0 20px
+
+	.registration__form__row
+		flex-direction: column
+
+	.registration__form__left
+		width: 100%
+
+	.registration__form__right
+		width: 100%
+
+	.footer
+		min-height: 80px
+
+	.btn__submit
+		margin-top: 30px
+
+@media only screen and (min-device-width: 320px) and (max-device-width: 480px)
+	.registration__form__row
+		flex-direction: column
+
+	.btn__submit
+		margin-top: 30px
+
+	.logo-title
+		height: 160px
+
+	.header
+		min-height: 320px
+
+	.logo-img
+		height: 160px
+
+	.location
+		flex-direction: column-reverse
+		min-height: 320px
+
+	.location__address
+		width: 100%
+		height: 160px
+
+	.location__invitation
+		width: 100%
+		height: 160px
+
+	.main
+		min-height: 500px
+
+	.location__invitation
+		padding: 10px 10px 0 10px
+
+	.location__invitation__title
+		font-size: 2.0em
+		line-height: 34px
+
+	.location__invitation__subtitle
+		font-size: 1.4em
+		line-height: 24px
+
+	.location__invitation__name
+		font-size: 1.2em
+
+	.location__invitation__text
+		font-size: 1.0em
+		line-height: 20px
+
+	.location__address__date
+		font-size: 2.0em
+		line-height: 30px
+		margin-bottom: 20px
+
+	.location__address__street
+		font-size: 1.2em
+		line-height: 24px
+
+	.location__address
+		padding: 10px
+
+	.schedule
+		height: 180px
+		padding: 10px
+
+	.schedule__text
+		font-size: 1.0em
+		line-height: 18px
+
+	.registration
+		flex-direction: column-reverse
+		min-height: 890px
+
+	.registration__condition
+		flex-direction: column-reverse
+		min-height: 320px
+
+	.registration__condition__title
+		width: 100%
+		height: 160px
+
+	.registration__condition__title__text
+		padding: 20px
+		font-size: 2.0em
+		line-height: 40px
+
+	.registration__form
+		height: 570px
+		padding: 20px
+
+	.registration__condition__text
+		width: 100%
+		height: 160px
+		padding: 10px 40px 0 20px
+		font-size: 0.9em
+
+	.registration__form__left
+		width: 100%
+
+	.registration__form__right
+		width: 100%
+
+	.footer
+		min-height: 80px
+
+	.footer__text
+		font-size: 1.0em
+
+	.btn__submit
+		margin-top: 30px
+
 
 
 
