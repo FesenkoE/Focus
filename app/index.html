@@ -1,11 +1,12 @@
 <!doctype html>
-<html lang="en">
+<html dir="rtl" lang="en">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport"
           content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/rtl.css">
     <title>Document</title>
 </head>
 <body>
@@ -41,7 +42,7 @@
 </section>
 <section class="registration">
     <div class="registration__form">
-        <form action="" method="post">
+        <form action="../send.php" method="post">
             <div class="registration__form__row">
                 <div class="registration__form__title">
                     הרשמה לכנס
@@ -49,9 +50,9 @@
                 <div class="registration__form__right  d-flex">
                     <div class="registration__form__count">כמות משתתפים:</div>
                     <div class="radio-btn">
-                        <input type="radio" id="1" name="count" value="1" checked>
+                        <input type="radio" id="1" name="count-people" value="1" checked>
                         <label for="1" class="radio-btn__btn">1</label>
-                        <input type="radio" id="2" name="count" value="2">
+                        <input type="radio" id="2" name="count-people" value="2">
                         <label for="2" class="radio-btn__btn">2</label>
                     </div>
                 </div>
@@ -59,27 +60,27 @@
             <div class="registration__form__row">
                 <div class="registration__form__left">
                     <label for="first-name" class="registration__form__label">שם פרטי:</label>
-                    <input type="text" id="first-name" class="registration__form__input" required>
+                    <input type="text" id="first-name" name="first-name" class="registration__form__input" required>
                 </div>
                 <div class="registration__form__right">
                     <label for="last-name" class="registration__form__label">שם משפחה:</label>
-                    <input type="text" id="last-name" class="registration__form__input" required>
+                    <input type="text" id="last-name" name="last-name" class="registration__form__input" required>
                 </div>
             </div>
             <div class="registration__form__row">
                 <div class="registration__form__left">
                     <label for="phone" class="registration__form__label">טלפון / נייד:</label>
-                    <input type="text" class="registration__form__input" id="phone" required>
+                    <input type="text" name="phone" class="registration__form__input" id="phone" required>
                 </div>
                 <div class="registration__form__right">
                     <label for="email" class="registration__form__label">דוא״ל:</label>
-                    <input type="email" id="email" class="registration__form__input">
+                    <input type="email" id="email" name="email" class="registration__form__input">
                 </div>
             </div>
             <div class="registration__form__row bottom-row">
                 <div class="registration__form__left d-flex">
                     <label for="city" class="registration__form__label__city">עיר מגורים:</label>
-                    <input type="text" id="city" class="registration__form__input__city">
+                    <input type="text" id="city" name="city" class="registration__form__input__city">
                 </div>
                 <div class="registration__form__right">
                     <input type="submit" class="registration__form__input btn__submit" value="שלח">

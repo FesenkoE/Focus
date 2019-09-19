@@ -84,6 +84,13 @@ gulp.task('css-min', ['sass'], () => {
 		.pipe(gulp.dest('app/css'));
 });
 
+gulp.task('css-min', ['sass'], () => {
+	gulp.src('app/css/rtl.css')
+		.pipe(cssnano())
+		.pipe(rename({suffix: '.min'}))
+		.pipe(gulp.dest('app/css'));
+});
+
 // JS
 
 gulp.task('js-min', () => {

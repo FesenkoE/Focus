@@ -1,0 +1,42 @@
+.header
+  flex-direction: row-reverse
+
+.main
+  flex-direction: row-reverse
+
+.location
+  flex-direction: row-reverse
+
+.registration__condition
+  flex-direction: row-reverse
+
+.registration
+  flex-direction: row-reverse
+
+
+/* (1280x1024) SXGA Display */
+@media  screen and (max-width: 1280px)
+  .header
+    flex-direction: column-reverse
+
+  .main
+    flex-direction: column-reverse
+
+  .registration
+    flex-direction: column
+
+/* (480x800) Android */
+@media only screen and (min-device-width: 480px) and (max-device-width: 640px)
+  .location
+    flex-direction: column-reverse
+
+  .registration__condition
+    flex-direction: column-reverse
+
+@media only screen and (min-device-width: 320px) and (max-device-width: 480px)
+  .location
+    flex-direction: column-reverse
+
+  .registration__condition
+    flex-direction: column-reverse
+
